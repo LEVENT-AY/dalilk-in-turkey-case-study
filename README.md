@@ -57,6 +57,12 @@ flowchart LR
 - Arabic text-integrity tooling for detecting and repairing encoding/mojibake issues.
 - Shared product patterns that let many service domains coexist inside one application.
 
+## Verification evidence
+
+The private source retains **physical-device QA artifacts** — Android screenshots plus UI-hierarchy dumps — for key product flows. It also contains explicit Arabic encoding standards and repair reports, service-specific verification documents, and release notes used to validate behavior beyond a successful build.
+
+Those device screenshots are intentionally not copied into this public showcase without a privacy review because some QA captures may contain account, chat, or operational data. The existence of private evidence is documented here; no unreviewed production capture is presented as public proof.
+
 ## Key engineering decisions
 
 ### One platform, many service domains
@@ -76,7 +82,7 @@ Arabic UX is not only typography and RTL layout. Encoding corruption can damage 
 | Backend | Firebase, Cloud Firestore, Firebase Auth |
 | Admin | Web/admin workflows |
 | Operations | Moderation, support, content review, data repair |
-| Quality | Arabic text integrity + production troubleshooting |
+| Quality | Device QA artifacts, Arabic text integrity, production troubleshooting |
 
 ## What this demonstrates
 
