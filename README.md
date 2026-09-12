@@ -7,40 +7,32 @@
 **Public engineering case study by [Levent Aydin](https://github.com/LEVENT-AY)**  
 Senior Full-Stack, Mobile & AI Automation Engineer
 
-> Production source code and Firebase configuration remain private. This repository documents the product architecture, operating model and engineering scope without exposing customer data or proprietary implementation details.
+> Production source code and Firebase configuration remain private. This repository documents product architecture, operating model, and engineering scope without exposing customer data or proprietary implementation details.
+
+## 30-second recruiter scan
+
+- **System:** Arabic-first Flutter/Firebase platform covering community services, jobs, transport, healthcare, directories, support, moderation, and administration.
+- **My ownership:** Flutter product development, Firebase integration, shared service workflows, admin/moderation tooling, Arabic data quality, and production troubleshooting.
+- **What it proves:** I can scale one product across many service domains while keeping user experience, content operations, moderation, and data integrity coherent.
 
 ## At a glance
 
 | | |
 |---|---|
-| **Product type** | Multi-service Arabic community platform |
 | **Mobile** | Flutter · Dart |
 | **Backend platform** | Firebase Auth · Cloud Firestore |
-| **Operations** | Web administration, moderation queues, support and review workflows |
-| **Engineering focus** | Arabic-first UX · multi-domain product design · moderation · data integrity |
-| **My role** | Flutter product development, Firebase integration, admin tooling, service workflows, data quality and production troubleshooting |
+| **Operations** | Web admin · moderation · support · review workflows |
+| **Focus** | Arabic-first UX · multi-domain product design · data integrity |
 
 ## The engineering problem
 
-Dalilk in Turkey brings many everyday service categories into one Arabic-first product for Syrians and Arabic-speaking residents in Türkiye. The challenge is not simply feature count; it is keeping identity, navigation, data access, moderation and operations coherent across many domains.
+Dalilk in Turkey brings many everyday service categories into one Arabic-first product for Syrians and Arabic-speaking residents in Türkiye. The difficulty is not feature count by itself; it is keeping identity, navigation, data access, moderation, and operations coherent across many domains.
 
 The product therefore treats **customer experience and admin operations as two sides of the same system**.
 
 ## Product scope
 
-Implemented or operationally supported areas include:
-
-- service and consultation requests;
-- jobs and job moderation;
-- cars and rentals;
-- transport and booking workflows;
-- doctors, health specialists and pharmacies;
-- housing / residency-oriented forms;
-- community groups and public chat;
-- news and media content;
-- kitchen and cleaning services;
-- discovery / live-camera experiences;
-- support, reports and administrative review workflows.
+Jobs · cars and rentals · transport and bookings · doctors and pharmacies · housing/residency workflows · community/chat · news/media · service requests · support and administrative review.
 
 ## Architecture
 
@@ -57,47 +49,41 @@ flowchart LR
 
 ## What I built and owned
 
-- Flutter/Dart mobile application with Arabic-first UX.
+- Flutter/Dart mobile application with Arabic-first product patterns.
 - Firebase Authentication and Firestore-backed product state.
-- Broad administration surface covering user-generated and operational content.
-- Moderation and pending-review workflows for jobs, cars, rentals, service requests and reports.
-- Admin visibility across community, healthcare, transport, provider and media domains.
-- Public-chat operations and data-repair workflows.
+- Administration surface spanning user-generated and operational content.
+- Moderation and pending-review workflows across multiple service domains.
+- Public-chat operations, support visibility, and data-repair workflows.
 - Arabic text-integrity tooling for detecting and repairing encoding/mojibake issues.
-- Shared product patterns that allow many service domains to coexist inside one application.
-- Operational summaries for urgent work, pending content, support demand and platform activity.
+- Shared product patterns that let many service domains coexist inside one application.
 
-## Core engineering decisions
+## Key engineering decisions
 
-### 1. One platform, many service domains
+### One platform, many service domains
+Shared identity, data access, moderation patterns, and administration reduce duplication while allowing the product to grow into new community needs.
 
-Shared identity, data access, moderation patterns and administration reduce duplication while allowing the product to grow into multiple community needs.
+### Admin operations are part of the product
+User-facing features remain useful only if providers, requests, reports, and content can be reviewed and operated safely.
 
-### 2. Admin operations are part of the product
-
-User-facing features only remain useful if providers, requests, reports and content can be reviewed and operated safely. The admin surface therefore has its own workflows and queues.
-
-### 3. Arabic quality needs technical safeguards
-
-Arabic UX is not only typography and layout. Encoding corruption can damage real content, so the project includes explicit integrity checks and repair tooling.
+### Arabic quality needs technical safeguards
+Arabic UX is not only typography and RTL layout. Encoding corruption can damage real content, so integrity checks and repair tooling are explicit engineering concerns.
 
 ## Technology
 
 | Area | Technology / focus |
 |---|---|
 | Mobile | Flutter, Dart |
-| Backend platform | Firebase, Cloud Firestore, Firebase Auth |
-| Admin | Flutter web/admin workflows |
-| Product | Arabic-first service marketplace/community platform |
-| Operations | Moderation queues, support, content review, data repair |
-| Quality | Arabic text-integrity checks and production troubleshooting |
+| Backend | Firebase, Cloud Firestore, Firebase Auth |
+| Admin | Web/admin workflows |
+| Operations | Moderation, support, content review, data repair |
+| Quality | Arabic text integrity + production troubleshooting |
 
 ## What this demonstrates
 
-Dalilk demonstrates ownership of a **large multi-domain Flutter product** where mobile UX, Firebase data, moderation, administration and Arabic data-quality concerns all need to work as one operational platform.
+Ownership of a large multi-domain mobile product where UX, Firebase data, moderation, administration, and Arabic data quality all need to operate as one system.
 
 ---
 
-**Source policy:** private for IP, customer-data and operational-security reasons. No proprietary source code, credentials or Firebase configuration are published here.
+**Source policy:** private for IP, customer-data, and operational-security reasons. No proprietary source code, credentials, or Firebase configuration are published here.
 
 [← Back to my engineering profile](https://github.com/LEVENT-AY)
