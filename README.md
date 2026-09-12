@@ -1,3 +1,7 @@
+![Dalilk in Turkey engineering case study cover](./assets/hero.svg)
+
+> **Visual overview:** conceptual case-study artwork based on the Arabic mobile, Firebase, and admin workflows. It does not represent live users or production content.
+
 # Dalilk in Turkey — Arabic-First Community Services Platform
 
 **Public engineering case study by [Levent Aydin](https://github.com/LEVENT-AY)**  
